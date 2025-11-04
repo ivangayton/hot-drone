@@ -28,7 +28,7 @@ The ground-based and drone-based transceivers need to be "bound" to one another 
 - Press and hold the [tiny binding button on the drone-based transceiver](Images/bind_button.jpg) and turn it back on again. The LED light will start blinking quickly, indicating that it's in binding mode. 
 - While continuing to hold the bind button, turn the RC controllor off and on again, which will power cycle the ground-based transceiver mounted to it and cause it to bind to the drone-based transceiver after a few seconds.
 
-<img src="./images/bind_button.webp" alt="The bind button is rather small">
+<img src="./images/bind_button.webp" alt="The bind button is rather small" width="200">
 
 This procedure is documented [on Micoair's website on this page](https://micoair.com/trs_tx_module_receiver/), but—amazingly annoyingly—you can't see the instructions until you scroll down a bit and click the "Specifications" tab. 
 
