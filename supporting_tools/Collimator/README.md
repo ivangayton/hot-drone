@@ -21,15 +21,15 @@ We used the following items to build the collimator setup:
 - A set of 3D printed parts (STL files to come)
 
 The whole rig looks like this:
-![Collimator_rig](./Images/Collimator_rig.jpg)
+![Collimator_rig](./images/Collimator_rig.jpg)
 
 A close-up of the rub-on transfer pattern on the back of the SLR looks like this:
 
-![Target pattern](./Images/Target_transparency.jpg)
+![Target pattern](./images/Target_transparency.jpg)
 
 And the two cameras looking at one another looks like this:
 
-![SLR and Arducam staring contest](./Images/SLR_and_Arducam_pointing_at_each_other.jpg)
+![SLR and Arducam staring contest](./images/SLR_and_Arducam_pointing_at_each_other.jpg)
 
 ## Software and setup
 
