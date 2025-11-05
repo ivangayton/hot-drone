@@ -8,7 +8,16 @@ We're using the [Radiomaster Pocket](https://radiomasterrc.com/products/pocket-r
 ### Stuff about the RC controller
 As mentioned above, the RC controller shares the receiver with the telemetry radio.
 
-Since the RC controller runs EdgeTX, most of the relevant information on how to set up and operate it is found in the [EdgeTX manual](https://manual.edgetx.org/bw-radios/model-select/setup)
+Since the RC controller runs EdgeTX, most of the relevant information on how to set up and operate it is found in the [EdgeTX manual](https://manual.edgetx.org/bw-radios/model-select/setup).
+
+#### Physical setup
+You'll want the left stick (throttle vertically and yaw horizontally in normal Mode 2 drone control schemes) to auto-center vertically (it already auto-centers horizontally, and the right stick auto-centers in both axes). There are a pair of screws that control the gimbal centering on the throttle stick.
+
+Turn the controller upside-down, take a 1.5 mm hex key, and do like the picture says.
+
+<img src="./images/Screws_to_center_throttle_stick.webp" alt="Screws to center the throttle stick" width="500">
+
+Get some 18650 batteries with flat—not button—tops. Make sure they're not longer than 650 mm (some 18650 batteries are a few mm longer than 650 because they incorporate a safety circuit; that sounds nice but they won't fit in the controller). Put these batteries in the compartment under the rubber grippy covers, which can be peeled off with a thumbnail.
 
 ## Telemetry
 For telemetry, we're using the [Micoair TRS TX transmitter and reciever module](https://micoair.com/trs_tx_module_receiver/).
@@ -28,7 +37,7 @@ The ground-based and drone-based transceivers need to be "bound" to one another 
 - Press and hold the [tiny binding button on the drone-based transceiver](Images/bind_button.jpg) and turn it back on again. The LED light will start blinking quickly, indicating that it's in binding mode. 
 - While continuing to hold the bind button, turn the RC controllor off and on again, which will power cycle the ground-based transceiver mounted to it and cause it to bind to the drone-based transceiver after a few seconds.
 
-<img src="./images/bind_button.webp" alt="The bind button is rather small" width="200">
+<img src="./images/bind_button.webp" alt="The bind button is rather small" width="300">
 
 This procedure is documented [on Micoair's website on this page](https://micoair.com/trs_tx_module_receiver/), but—amazingly annoyingly—you can't see the instructions until you scroll down a bit and click the "Specifications" tab. 
 
