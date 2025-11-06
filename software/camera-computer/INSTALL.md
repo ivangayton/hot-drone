@@ -37,6 +37,12 @@ Choose "Save", then choose "Yes" to continue to writing the microSD card. Once t
 
 The Pi may require a few minutes to get itself sorted out. Among other things, it will resize the disk image to take up the full amount of the microSD card it was written to. So allow each Pi a few minutes to do its thing before disconnecting power and trying to troubleshoot perceived Wi-Fi problems. (This is the voice of experience!) It also seems that on first boot, the Wi-Fi doesn't come up. So during first boot from a freshly imaged SD card, wait a few minutes and then power-cycle the Zero. After a minute of rebooting, it should connect to your Wi-Fi.
 
+To find the Pi on your network, you can install arp-scan to find all of the devices on the network. First, find your own IP address on the network (you must be on the same network as the Pi) with ```ip addr show```. Then issue the command ```arp-scan xxx.xxx.xxx.xxx/24 (the x's represent your own IP address, though the bit after the last period can be 0). Then ssh in with ```ssh drone@xxx.xxx.xxx.xxx``` and type in the relevant password. 
+
+It may be that without public-key authentication isn't set up, the pi won't be configured to accept ssh connections. You have a few options:
+- Connect the pi to a monitor, which will get you a terminal, and edit the relevant config file by typing ```sudo nano /etc/ssh/ssdh_config``` and changing the line ```PasswordAuthentication No``` to ```PasswordAuthentication Yes```.
+- If you don't have a monitor, you can turn off the Pi, plug the SD card into a computer, enter the ```rootfs``` partition, find the file ```/etc/ssh/sshd_config```, edit as above, put the card back in the Pi and try again.
+
 I've also found running `sudo iw wlan0 set power_save off` on a Raspberry Pi makes its Wi-Fi more reliable to connect to, and less hurky-jerky in use on a weak Wi-Fi network.
 
 Once you're logged in, you should resize the third partition on the SD card. It looks like this:
