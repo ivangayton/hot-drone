@@ -2,7 +2,7 @@
 
 ## KB2040
 
-Installing firmware is a simple matter of connecting the KB2040 to a host PC over USB. Hold down the "BOOT" button on the KB2040 while connecting to force the KB2040 to enter the UF2 bootloader. This causes the KB2040 to appear as a USB mass storage device on your PC. From there, drag or otherwise copy the .UF2 file to to KB2040 mass storage drive. After a few seconds, the drive will disappear from your PC. Wait a few more seconds just for good measure, then detach the KB2040 and it's ready to be reconnected to the target system (the camera subsystem). One sign that the KB2040 is correctly flashed is that the onboard RGB LED will flash on and off in red. This is an indication the firmware is awaiting a USB host to connect and start streaming drone data from the KB2040.
+Installing firmware is a simple matter of connecting the KB2040 to a host PC over USB. Hold down the "BOOT" button on the KB2040 while connecting to force the KB2040 to enter the UF2 bootloader. This causes the KB2040 to appear as a USB mass storage device on your PC, provided the Raspberry Pis are not connected (make sure the KB2040 is not connected to the other subsystems before attempting this). From there, drag or otherwise copy the .UF2 file to to KB2040 mass storage drive. After a few seconds, the drive will disappear from your PC. Wait a few more seconds just for good measure, then detach the KB2040 and it's ready to be reconnected to the target system (the camera subsystem). One sign that the KB2040 is correctly flashed is that the onboard RGB LED will flash on and off in red. This is an indication the firmware is awaiting a USB host to connect and start streaming drone data from the KB2040.y
 
 ## Raspberry Pi Zero 2 W
 
