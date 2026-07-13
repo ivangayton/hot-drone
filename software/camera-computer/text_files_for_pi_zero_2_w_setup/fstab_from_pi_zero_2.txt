@@ -1,0 +1,8 @@
+proc            /proc           proc    defaults          0       0
+PARTUUID=e0a4ae62-01  /boot/firmware  vfat    defaults          0       2
+PARTUUID=e0a4ae62-02  /               ext4    defaults,noatime  0       1
+tmpfs           /var/log              tmpfs   defaults,noatime,mode=0755 0 0
+/dev/mmcblk0p3  /home/drone/out       ext4    defaults,noatime           0 2
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+ 

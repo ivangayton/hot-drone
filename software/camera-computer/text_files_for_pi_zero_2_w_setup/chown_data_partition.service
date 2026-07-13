@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount the third partition on the SD card
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/chown_data_partition.sh
+
+[Install]
+WantedBy=multi-user.target
+ 

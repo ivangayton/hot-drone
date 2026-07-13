@@ -2,7 +2,7 @@
 
 ## KB2040
 
-Installing firmware is a simple matter of connecting the KB2040 to a host PC over USB. Hold down the "BOOT" button on the KB2040 while connecting to force the KB2040 to enter the UF2 bootloader. This causes the KB2040 to appear as a USB mass storage device on your PC, provided the Raspberry Pis are not connected (make sure the KB2040 is not connected to the other subsystems before attempting this). From there, drag or otherwise copy the .UF2 file to to KB2040 mass storage drive. After a few seconds, the drive will disappear from your PC. Wait a few more seconds just for good measure, then detach the KB2040 and it's ready to be reconnected to the target system (the camera subsystem). One sign that the KB2040 is correctly flashed is that the onboard RGB LED will flash on and off in red. This is an indication the firmware is awaiting a USB host to connect and start streaming drone data from the KB2040.y
+Installing firmware is a simple matter of connecting the KB2040 to a host PC over USB. Hold down the "BOOT" button on the KB2040 while connecting to force the KB2040 to enter the UF2 bootloader. This causes the KB2040 to appear as a USB mass storage device on your PC, provided the Raspberry Pis are not connected (make sure the KB2040 is not connected to the other subsystems before attempting this). From there, drag or otherwise copy the .UF2 file to to KB2040 mass storage drive. After a few seconds, the drive will disappear from your PC. Wait a few more seconds just for good measure, then detach the KB2040 and it's ready to be reconnected to the target system (the camera subsystem). One sign that the KB2040 is correctly flashed is that the onboard RGB LED will flash on and off in red. This is an indication the firmware is awaiting a USB host to connect and start streaming drone data from the KB2040.
 
 ## Raspberry Pi Zero 2 W
 
@@ -73,6 +73,13 @@ sudo mount /dev/mmcblk0p3 /home/drone/out
 # Correct the permissions on the mounted `/home/drone/out` node
 sudo chown drone:drone /home/drone/out
 ```
+
+## Do the above directly on the SD card instead of logging into the Pi
+If we don't want to connect to the Pi Zero 2 W with a terminal (either via SSH or using a keyboard and monitor), we can do this directly on the SD card filesystem in a Linux laptop.
+
+We can create a Systemd serivce to do the change owner operation (which requires mount point actually exist before it can be chowned). Paste the ```chown_data_partition.service``` file into ```/media/$USER/rootfs/lib/systemd/system/```. Paste ```chown_data_partition.sh``` into ```/media/$USER/rootfs/opt/```. Activate the service with ```sudo ln -s /etc/systemd/system/chown_data_partition.service``` (don't worry about it pointing to your computer's ```etc``` folder, apparently the path text will be interpreted correctly by systemd when it's running on the Pi.
+
+## Done!
 
 Now, reboot the Pi Zero, and it should be fully functional.
 
