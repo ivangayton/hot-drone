@@ -9,6 +9,8 @@ virtualenv venv
 . venv/bin/activate
 
 pip install numpy pidng pymavlink
+
+NOTE: might need to deal separately with pymavlink due to a version conflict with python3 > 3.11. [See here for a recipe](https://github.com/mustafa-gokce/ardupilot-software-development/blob/main/pymavlink/installing-pymavlink.md) which basically boild down to using ```python3 -m pip install pymavlink --upgrade```.
 ```
 
 ## Usage

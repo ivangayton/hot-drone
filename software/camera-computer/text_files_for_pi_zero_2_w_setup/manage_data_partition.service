@@ -1,0 +1,11 @@
+[Unit]
+Description=Resize, mount, and chown the third partition on the SD card
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/manage_data_partition.sh
+
+[Install]
+WantedBy=multi-user.target
+ 
