@@ -77,7 +77,32 @@ sudo chown drone:drone /home/drone/out
 ## Do the above directly on the SD card instead of logging into the Pi
 If we don't want to connect to the Pi Zero 2 W with a terminal (either via SSH or using a keyboard and monitor), we can do this directly on the SD card filesystem in a Linux laptop.
 
-We can create a Systemd serivce to do the change owner operation (which requires mount point actually exist before it can be chowned). Paste the ```chown_data_partition.service``` file into ```/media/$USER/rootfs/lib/systemd/system/```. Paste ```chown_data_partition.sh``` into ```/media/$USER/rootfs/opt/```. Activate the service with ```sudo ln -s /etc/systemd/system/chown_data_partition.service``` (don't worry about it pointing to your computer's ```etc``` folder, apparently the path text will be interpreted correctly by systemd when it's running on the Pi.
+```
+# Run `fdisk` to delete and recreate the third partition with a larger size
+# SD card probably shows up as /dev/sda (check that!)
+sudo fdisk /dev/sda
+
+# Command: d (delete a partition)
+# Partition number: 3
+# Command: n (add a new partition)
+# Partition type: p
+# Partition number: 3
+# First sector: 7618560
+# Last sector: <recommended default, the last sector of the SD card, however large yours is>
+# Remove the ext2 signature if asked, because why not?
+# Command: w (write partition table to disk)
+
+# Create a new filesystem on the third partition
+sudo mke2fs -v -E discard -m 0 -O ^has_journal /dev/sda3
+```
+
+If doing it this way, don't bother to mount the filesystem because you're not on the Pi; the mount point is created on the fly on the actual machine, not on the OS media! However, you still have to chown the mount point, which can't be done on another machine (because the mount point doesn't exist on the other machine)
+
+We can create a Systemd serivce to do the change owner operation (which requires mount point actually exist before it can be chowned). Paste the ```chown_data_partition.service``` file into ```/media/$USER/rootfs/lib/systemd/system/```. Paste ```chown_data_partition.sh``` into ```/media/$USER/rootfs/opt/```. Activate the service with ```sudo ln -s /etc/systemd/system/chown_data_partition.service``` (it looks like you're pointing the symlink to your computer's ```etc``` folder, but don't worry, the target text will be interpreted correctly as referreing to the Pi's /etc/ directory when it's running on the Pi.
+
+Be sure to edit ```rootfs/etc/ssh/sshd-config``` to change ```PasswordAuthentication no``` to ```PasswordAuthentication yes``` (unless you set up ssh keys on the Pi on setup and are sure you'll only ever want to ssh in from the machines with those keys). 
+
+### TODO: Add the resizing operation to the script called by the service (probably using parted instead of fdisk) to eliminate the manual steps above.
 
 ## Done!
 
