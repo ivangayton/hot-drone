@@ -78,6 +78,14 @@ The flight computer is a [HolyBro PixHawk 6C](https://docs.holybro.com/autopilot
 
 [ArduPilot Copter stable-4.5.7](https://firmware.ardupilot.org/Copter/stable-4.5.7/Pixhawk6C/) was used for the 2025/03/25 and 2025/08/20 farm flights.
 
+### Update 2026-10-15 flashing process
+- Connect the new (or to-be-reflashed) Pixhawk6C to a computer running QGroundControl. Hit the configure button. Click the Firmware tab. 
+- The device should be already selected via its serial port in the dropdown, otherwise select it. Hit the Flash button. It'll instruct you to unplug the Pixhawk and plug it back in to get it into flashing mode.
+- Select the Chibios OS (normally the default already) and the Pixhawk6C-bdshot (Holybro) option. 
+- Once the Pixhawk is flashed, QGroundControl should announce that "Configuration tasks remain before this vehicle is ready to fly. Open the red-marked components on the left to finish setup."
+- Start with the Frame, which should be a Quad X. 
+- Go to Parameters, push the Tools button on the upper right, choose Load from file for review, and select the x500v2.params file from this repo. 
+
 The flight computer configuration "params" after the 2025/08/20 flight is in [params.txt](params.txt). It'll be kept current if there are any new flights of this vehicle where parameters are adjusted.
 
 I run [Arch Linux](https://archlinux.org/) on my Intel 12th generation [Framework 13 Laptop](https://frame.work/laptop13). On my laptop, I have been using two different configuration and ground control programs:
