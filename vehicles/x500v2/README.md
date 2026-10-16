@@ -84,9 +84,18 @@ The flight computer is a [HolyBro PixHawk 6C](https://docs.holybro.com/autopilot
 - Select the Chibios OS (normally the default already) and the Pixhawk6C-bdshot (Holybro) option. 
 - Once the Pixhawk is flashed, QGroundControl should announce that "Configuration tasks remain before this vehicle is ready to fly. Open the red-marked components on the left to finish setup."
 - Start with the Frame, which should be a Quad X. 
-- Go to Parameters, push the Tools button on the upper right, choose Load from file for review, and select the x500v2.params file from this repo. 
+- Go to Parameters, push the Tools button on the upper right, choose Load from file for review, and select the x500v2.params file from this repo. Press Open. It'll complain that there are missing parameters which have been skipped; that's ok because they're fine as the defaults. Everything we need to overwrite is in the .params file.
 
-The flight computer configuration "params" after the 2025/08/20 flight is in [params.txt](params.txt). It'll be kept current if there are any new flights of this vehicle where parameters are adjusted.
+TODO: remove non-flight-related stuff from params file
+
+NOTE: the serial ports on the Pixhawk6C Pro we have don't match the Holybro documentation or the standards expected by MavLink and QGroundControl.
+
+Telem1 maps to Serial1 in the Ardupilot params
+Telem2 maps to Serial2 in the Ardupilot params
+Telem3 maps to Serial5 in the Ardupilot params
+
+
+The flight computer configuration "params" after the 2025/08/20 flight is in [x500v2.params](x500v2.params). It'll be kept current if there are any new flights of this vehicle where parameters are adjusted.
 
 I run [Arch Linux](https://archlinux.org/) on my Intel 12th generation [Framework 13 Laptop](https://frame.work/laptop13). On my laptop, I have been using two different configuration and ground control programs:
 
