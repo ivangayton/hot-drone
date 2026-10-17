@@ -90,11 +90,22 @@ TODO: remove non-flight-related stuff from params file
 
 NOTE: the serial ports on the Pixhawk6C Pro we have don't match the Holybro documentation or the standards expected by MavLink and QGroundControl.
 
-Telem1 maps to Serial1 in the Ardupilot params
-Telem2 maps to Serial2 in the Ardupilot params
-Telem3 maps to Serial5 in the Ardupilot params
+- Telem1 maps to Serial1 in the Ardupilot params
+- Telem2 maps to Serial2 in the Ardupilot params
+- Telem3 maps to Serial5 in the Ardupilot params
 
+NOTE: in PX4 the mapping is different, as are the parameter names. If and when we want to get any of this stuff working with PX4, we'll need to investigate the serial mapping among many other things.
 
+### 2026-10-16 Further Ken and Ivan setup
+The KB2040 coordinator for the camera module is flashed&mdash;for the moment&mdash;with a [mock setup implementing a "fake" camera component](https://github.com/mrkensan/tri-cam-kb2040/) to exercise the interaction between the flight controller, ground station, and camera subsystem (that interaction won't change when we add the RPis with the actual cameras, we'll just add the actual photo captures etc). This interaction happens in MavLink, so the flight controller parameters need to be set correctly. If they aren't, the camera controls do not appear in the QGroundControl UI, and (rather more importantly) the flight controller won't be able to instruct the camera to start capturing photos.
+
+The KB2040 identifies itself over a serial connection to the Telem3 port on the Pixhawk as a MavLink camera component with ID 100 (kinda standard for MavLink cameras) running at 57600 baud. Therefore the Ardupilot parameter SERIAL5_BAUD must be 57600 and the SERIAL5_PROTOCOL must be MAVLink2.
+
+The CAM1_TYPE parameter should be set to MavLinkCamV2.
+
+In QGroundControl (Android or PC), the "Fly" view should contain a camera control in the upper right hand portion of the screen. There's a trigger button and a settings gear icon; the settings can be for single or time-lapse photography (we'll want this set to time-lapse with a 1-second interval). If that camera control widget doesn't appear, it means that the flight controller has not been able to discover a camera peripheral. The QGroundControl MAVLink Inspector view gives an overview of MavLink protocol serial traffic; if all is well the camera subsystem will be visible with component ID 100, emitting a hearbeat at 1 hz and (when triggered) CAMERA_CAPTURE_STATUS, CAMERA_IMAGE_CAPTURED (also nominally at 1 hz if it's been triggered appropriately), and COMMAND_ACK (you can filter the view in the Inspector to only show messages from component 100 i.e. our camera subsystem). 
+
+## Jared setup
 The flight computer configuration "params" after the 2025/08/20 flight is in [x500v2.params](x500v2.params). It'll be kept current if there are any new flights of this vehicle where parameters are adjusted.
 
 I run [Arch Linux](https://archlinux.org/) on my Intel 12th generation [Framework 13 Laptop](https://frame.work/laptop13). On my laptop, I have been using two different configuration and ground control programs:
