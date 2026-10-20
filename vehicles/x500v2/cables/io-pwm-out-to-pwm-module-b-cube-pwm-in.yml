@@ -26,16 +26,17 @@ connectors:
     type: JST GH
     subtype: female
     pincount: 10
-    pinlabels: [GND,
-                CH8,
-                CH7,
-                CH6,
-                CH5,
-                CH4,
-                CH3,
-                CH2,
+    pins: [10,9,8,7,6,5,4,3,2,1]
+    pinlabels: [VDD,
                 CH1,
-                VDD]
+                CH2,
+                CH3,
+                CH4,
+                CH5,
+                CH6,
+                CH7,
+                CH8,
+                GND]
     notes: "PWM MODULE B-CUBE PWM IN"
     image:
       src: PWM_MODULE_B-CUBE.jpg
@@ -46,7 +47,7 @@ cables:
     type: wire
     wirecount: 6
     gauge: 28 AWG
-    length: 140 mm
+    length: 100 mm
     colors: [RD,WH,YE,GN,BU,BK]
 
 connections:
