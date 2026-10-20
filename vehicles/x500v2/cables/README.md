@@ -13,13 +13,13 @@ Lots of documentation on how to use it. For the most part the PNG/SVG renders sh
 ![](PNG/power1-to-power-module.png)
 
 ### PPM/SBUS RC on Pixhawk to the right socket on the RC receiver
-![](ppm-sbus-rc-to-rc-receiver-right.png)
+![PPM/SBUS RC to RC Receiver Right](PNG/ppm-sbus-rc-to-rc-receiver-right.png)
 
 ### TELEM1 on Pixhawk to the left socket on the RC receiver
-![](telem1-to-rc-receiver-left.png)
+![TELEM1 to RC Receiver left](PNG/telem1-to-rc-receiver-left.png)
 
 ### TELEM3 on Pixhawk to the Camera Subsystem
-![](telem3-to-camera.png)
+![TELEM3 to Camera](PNG/telem3-to-camera.png)
 
 SAFETY on Pixhawk to the Safety Switch
 ![SAFETY to Safety Switch](PNG/safety-to-safety-switch.png)
