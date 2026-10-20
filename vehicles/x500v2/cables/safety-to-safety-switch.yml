@@ -1,0 +1,44 @@
+# SAFETY to Safety Switch
+metadata:
+  title: SAFETY to Safety Switch
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 3
+    pinlabels: [Safety Sw, 
+                GND,
+                V+]
+    notes: "SAFETY on Pixhawk"
+  X2:
+    type: JST MX 1.25 
+    subtype: female
+    pincount: 4
+    pinlabels: [S1,
+                S2,
+                VCC,
+                GND]
+    notes: "Safety Switch"
+    image:
+      src: Safety_Switch.jpg
+      width: 170
+
+      
+cables:
+  W1:
+    type: wire
+    wirecount: 4
+    gauge: 26 AWG
+    length: 140 mm
+    colors: [BN,BK,BN,GN]
+
+connections:
+  - - X1: [1-2,3,3]
+    - W1: [1-4]
+    - X2: [1,4,2,3]
+
