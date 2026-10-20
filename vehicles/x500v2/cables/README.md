@@ -18,8 +18,11 @@ Lots of documentation on how to use it. For the most part the PNG/SVG renders sh
 ### TELEM1 on Pixhawk to the left socket on the RC receiver
 ![TELEM1 to RC Receiver left](PNG/telem1-to-rc-receiver-left.png)
 
-### TELEM3 on Pixhawk to the Camera Subsystem
-![TELEM3 to Camera](PNG/telem3-to-camera.png)
-
 SAFETY on Pixhawk to the Safety Switch
 ![SAFETY to Safety Switch](PNG/safety-to-safety-switch.png)
+
+IO/PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
+![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/io-pwm-out-to-pwm-module-b-cube-pwm-in.jpg)
+
+### TELEM3 on Pixhawk to the Camera Subsystem
+![TELEM3 to Camera](PNG/telem3-to-camera.png)
