@@ -1,0 +1,42 @@
+# PPM/SBUS RC to RC Receiver Right Cable for HOT X500 drone
+metadata:
+  title: TELEM1 to RC Receiver Right
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 5
+    pinlabels: [VDD_5V_PPM_SBUS, 
+                PPM&amp;SBUS_IN,
+                RSSI_IN, 
+                NOT CONNECTED, 
+                GND]
+    notes: "PPM/SBUS RC on Pixhawk"
+  X2:
+    type: JST SH1.0
+    subtype: female
+    pincount: 4
+    pinlabels: [S,N,VCC (V),GND (G)]
+    notes: "Right Port on RC Reciever"
+    image:
+      src: RC_Receiver_Right.jpg
+      height: 200
+      
+cables:
+  W1:
+    type: wire
+    wirecount: 3
+    gauge: 28 AWG
+    length: 140 mm
+    colors: [BK,GN,RD]
+
+connections:
+  - - X1: [1,4-5]
+    - W1: [1-3]
+    - X2: [4,1,3]
+

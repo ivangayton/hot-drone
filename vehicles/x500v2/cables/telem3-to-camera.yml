@@ -1,0 +1,48 @@
+# TELEM3 to Camera Cable for HOT X500 drone
+metadata:
+  title: TELEM3 to Camera
+  description: Custom cable harness
+
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 6
+    pinlabels: [VCC, USART2_TX(out), USART2_RX(in), None, None, GND]
+    notes: "TELEM3 on Pixhawk"
+  X2:
+    type: JST XH
+    subtype: female
+    pincount: 4
+    pinlabels: [LED,GND, RX, TX]
+    notes: "Camera module" 
+  X3:
+    type: JST GH
+    subtype: female
+    pincount: 3
+    pinlabels: [VCC, LED, GND]
+    notes: "LED board"
+cables:
+  W1:
+    type: wire
+    wirecount: 3
+    gauge: 28 AWG
+    length: 315 mm
+    colors: [BK, BU, YE]
+    wirelabels: []
+  W2:
+    type: wire
+    wirecount: 3
+    gauge: 28 AWG
+    length: 0.315
+    colors: [RD, GN, BK]
+    wirelabels: []
+
+connections:
+  - - X1: [6,2-3]
+    - W1: [1-3]
+    - X2: [2-4]
+      
+  - - X1: [1,4,6]
+    - W2: [1-3]
+    - X3: [1-3]

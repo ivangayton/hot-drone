@@ -1,0 +1,38 @@
+# TELEM1 to RC Receiver Left Cable for HOT X500 drone
+metadata:
+  title: TELEM1 to RC Receiver Left
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 6
+    pinlabels: [VCC, USART2_TX(out), USART2_RX(in), None, None, GND]
+    notes: "TELEM1 on Pixhawk"
+  X2:
+    type: JST SH1.0
+    subtype: female
+    pincount: 4
+    pinlabels: [Tx (T),Rx (R),VCC (V),GND (G)]
+    notes: "Left Port on RC Reciever"
+    image:
+      src: RC_Receiver_Left.jpg
+      height: 200
+      
+cables:
+  W1:
+    type: wire
+    wirecount: 4
+    gauge: 28 AWG
+    length: 140 mm
+    colors: [RD, YE, GN, BK]
+
+connections:
+  - - X1: [1-3,6]
+    - W1: [1-4]
+    - X2: [3,2,1,4]
+

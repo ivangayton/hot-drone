@@ -1,0 +1,50 @@
+# POWER1 to APM Power Module for HOT X500 drone
+metadata:
+  title: POWER1 to Power Module
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+  
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 6
+    pinlabels: [VDD5V_BRICK1 (in),
+               VDD5V_BRICK1 (in),
+               CURRENT1,
+               VOLTAGE1,
+               GND,
+               GND]
+    notes: "POWER1 on Pixhawk"
+  X2:
+    type: JST XH
+    subtype: female
+    pincount: 6
+    pinlabels: [5V,
+                5V, 
+                Current sensor, 
+                Voltage sensor, 
+                GND, 
+                GND]
+    image: 
+       src: APM-Pixhawk-Power-Module.png
+       width: 150
+       height: 150
+    notes: "Power module"
+
+cables:
+  W1:
+    type: wire
+    wirecount: 6
+    gauge: 28 AWG
+    length: 100 mm
+    colors: [RD,WH,YE,GN,BU,BK]
+    wirelabels: []
+
+connections:
+  - - X1: [1-6]
+    - W1: [1-6]
+    - X2: [1-6]
+
