@@ -22,7 +22,7 @@ SAFETY on Pixhawk to the Safety Switch
 ![SAFETY to Safety Switch](PNG/safety-to-safety-switch.png)
 
 IO/PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
-![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/io-pwm-out-to-pwm-module-b-cube-pwm-in.jpg)
+![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/io-pwm-out-to-pwm-module-b-cube-pwm-in.png)
 
 ### TELEM3 on Pixhawk to the Camera Subsystem
 ![TELEM3 to Camera](PNG/telem3-to-camera.png)
