@@ -25,6 +25,7 @@ connectors:
   X2:
     type: JST GH
     subtype: female
+    bgcolor: '#00B000'
     pincount: 10
     pins: [10,9,8,7,6,5,4,3,2,1]
     pinlabels: [VDD,
@@ -37,7 +38,11 @@ connectors:
                 CH7,
                 CH8,
                 GND]
-    notes: "PWM MODULE B-CUBE PWM IN"
+    notes: |
+      PWM MODULE B-CUBE PWM IN
+      Colored green; this is the
+      end that goes to the PWM
+      in, not the Pixhawk!
     image:
       src: PWM_MODULE_B-CUBE.jpg
       width: 225

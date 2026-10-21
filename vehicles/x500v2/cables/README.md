@@ -1,6 +1,6 @@
 # Cable Diagrams
 
-We're using [WireViz](https://github.com/wireviz/WireViz) a YAML protocol and renderer for describing cables and connectors.
+We're using [WireViz](https://github.com/wireviz/WireViz), a YAML protocol and renderer for describing cables and connectors.
 
 This directory contains the raw YAML describing each of the connectors on the drone, as well as an SVG and PNG rendering of each.
 

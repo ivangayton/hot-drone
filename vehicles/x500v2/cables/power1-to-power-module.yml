@@ -19,7 +19,7 @@ connectors:
                GND]
     notes: "POWER1 on Pixhawk"
   X2:
-    type: JST XH
+    type: JST GH
     subtype: female
     pincount: 6
     pinlabels: [5V,
@@ -30,8 +30,7 @@ connectors:
                 GND]
     image: 
        src: APM-Pixhawk-Power-Module.png
-       width: 150
-       height: 150
+       width: 200
     notes: "Power module"
 
 cables:
