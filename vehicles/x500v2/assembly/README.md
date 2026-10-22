@@ -18,7 +18,7 @@
 
 <img src="photos/power_distribution_board_on_bottom_plate.jpg" alt="Bottom plate with power distribution board attached" width=600>
 
-<img src="photos/power_distribution_board_on_bottom_plate_side_view.jpg">
+<img src="photos/power_distribution_board_on_bottom_plate_side_view.jpg" alt="Power distribution board on bottom plate side view" width=400>
 
 
 ### Prepare PWM Module B-Cube
