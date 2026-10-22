@@ -16,15 +16,16 @@
 <img src="photos/screw_nylon_washer_and_nut_on_power_distribution_board.jpg" alt="Order of nylon washer, board, and screw" width = 600>
 - pass the remainder of the length of the screws through the corresponding holes in the bottom plate.
 
-![Bottom plate with power distribution board attached](photos/power_distribution_board_on_bottom_plate.jpg)
+<img src="photos/power_distribution_board_on_bottom_plate.jpg" alt="Bottom plate with power distribution board attached" width=600>
 
-![](photo/power_distribution_board_on_bottom_plate_side_view.jpg)
+<img src="photos/power_distribution_board_on_bottom_plate_side_view.jpg"
 
 
 ### Prepare PWM Module B-Cube
 - Place jumpers to block channels 5-8. Be sure to place them horizontally (across channels) so that they don't short anything!
 
-![Jumpers stuck in PWM module B-CUBE to block channels 5-8](photos/pwm_module_with_jumper_blockers.jpg)
+
+<img src="photos/pwm_module_with_jumper_blockers.jpg" alt="Jumpers stuck in PWM module B-CUBE to block channels 5-8" width=600>
 - Screw the module onto the top of the top plate
   - 2x
     - M3 X 16 flange head socket screw
@@ -34,10 +35,10 @@
 ![PWM module screws](photos/pwm_module_flange_head_screws.jpg)
   - Place the module on the bottom of the top plate,  with the front (the place where the connector from the Pixhawk goes, should be Sharpied green and opposite the side with the jumper/blockers. Tighten the Ny-locks on with a 5.5 mm nut driver (turn the screw head with a hex key).
 
-![](photos/pwm_module_mounted_with_hex_key_and_socket_driver.jpg)
+<img src="photos/pwm_module_mounted_with_hex_key_and_socket_driver.jpg" alt="PWM module mounted" width=600>
 - Put the cable in it now; it's harder to access later!
 
-![](photos/pwm_module_with_cable.jpg)
+<img src="photos/pwm_module_with_cable.jpg" alt="PWM module with cables" width=600>
 
 ### Mount the Flight Controller (PixHawk)
 - The flight controller mounts on vibration dampers
@@ -46,11 +47,13 @@
     - #4 flat steel washers
   - Pull the washers onto the dampers to the first detent.
 
-![](photos/flight_controller_mount_vibration_dampers.jpg)
+<img src="photos/flight_controller_mount_vibration_dampers.jpg" alt="Vibration dampers with washers" width=600>
   - Place the dampers in the slightly angled holes from the bottom
 
 ![Plate with a red pen pointing at one of the slightly angles holes](photos/slightly_angled_holes_for_flight_controller_mount.jpg)
   - Pull them through until the washers seat
+
+<img src="flight_controller_vibration_dampers_on_top_plate.jpg" alt="vibration dampers on top plate" width=600>
 
   - Place the flight controller plate onto the dampers. The arrow on the flight controller should point in the same direction as the arrow on the plate (in case that wasn't obvious). Pull the dampers through the holes until they seat (it'll be a snug pull as the holes in the plate are about the same size as the holes in the washers). 
     - Maybe make sure the SD card is in there.
