@@ -73,3 +73,25 @@
 - While you're at it, before you tighten everything up, check that the motors opposite one another will rotate in the same direction (3 wires parallel vs 2 of them crossed over)
 
 - Make sure the arrow on the top plate is pointing in the same direction as the sticker arrow on the bottom plate! 
+
+TODAY
+### Telemetry radio
+
+### Mount GNSS (kept on by antenna, to review)
+- fab cables
+  - GNSS to flight controller
+  - TELEM3 to camera stack length is 250 mm, other part of this cable is TELEM3 to LED indicator, this is 150 mm)
+  - GNSS to IMU
+  - Power to camera
+  - Datalogger to camera (200 mm)
+  
+  
+
+### Power supplies (rework for capacitor) (resolder connectors and wires)
+
+### Mock on camera module (among other things to figure out cables)
+
+NEED:
+- Flight plan or buttons to send the relevant commands
+  - First with Actions, later from a flight plan
+- Think about the rangefinder
