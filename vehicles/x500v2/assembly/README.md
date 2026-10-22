@@ -13,26 +13,26 @@
     - M3 nylon washer
   - Put the nylon washer on the screw, pass it down through the top of the power distribution board, add the nut and tighten.
 
-<img src="photos/screw_nylon_washer_and_nut_on_power_distribution_board.jpg" alt="Order of nylon washer, board, and screw" width = 600>
+<img src="photos/screw_nylon_washer_and_nut_on_power_distribution_board.jpg" alt="Order of nylon washer, board, and screw" width = 400>
 - pass the remainder of the length of the screws through the corresponding holes in the bottom plate.
 
 <img src="photos/power_distribution_board_on_bottom_plate.jpg" alt="Bottom plate with power distribution board attached" width=600>
 
-<img src="photos/power_distribution_board_on_bottom_plate_side_view.jpg"
+<img src="photos/power_distribution_board_on_bottom_plate_side_view.jpg">
 
 
 ### Prepare PWM Module B-Cube
 - Place jumpers to block channels 5-8. Be sure to place them horizontally (across channels) so that they don't short anything!
 
 
-<img src="photos/pwm_module_with_jumper_blockers.jpg" alt="Jumpers stuck in PWM module B-CUBE to block channels 5-8" width=600>
+<img src="photos/pwm_module_with_jumper_blockers.jpg" alt="Jumpers stuck in PWM module B-CUBE to block channels 5-8" width=400>
 - Screw the module onto the top of the top plate
   - 2x
     - M3 X 16 flange head socket screw
     - M3 Ny-lock
   - Drop the screws into the plate from the top
 
-![PWM module screws](photos/pwm_module_flange_head_screws.jpg)
+<img src="photos/pwm_module_flange_head_screws.jpg" alt="PWM module screws" width=400>
   - Place the module on the bottom of the top plate,  with the front (the place where the connector from the Pixhawk goes, should be Sharpied green and opposite the side with the jumper/blockers. Tighten the Ny-locks on with a 5.5 mm nut driver (turn the screw head with a hex key).
 
 <img src="photos/pwm_module_mounted_with_hex_key_and_socket_driver.jpg" alt="PWM module mounted" width=600>
