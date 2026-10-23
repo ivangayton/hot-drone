@@ -79,12 +79,13 @@ TODAY
 
 ### Mount GNSS (kept on by antenna, to review)
 - fab cables
-  - GNSS to flight controller
-  - TELEM3 to camera stack length is 250 mm, other part of this cable is TELEM3 to LED indicator, this is 150 mm)
+  - TELEM3 to camera (DONE)
+  - GNSS/Datalogger to camera (200 mm)
   - GNSS to IMU
   - Power to camera
-  - Datalogger to camera (200 mm)
+  - GNSS to flight controller
   
+ LOOK OVER ENTIRE BUILD BEFORE FLIGHT
   
 
 ### Power supplies (rework for capacitor) (resolder connectors and wires)

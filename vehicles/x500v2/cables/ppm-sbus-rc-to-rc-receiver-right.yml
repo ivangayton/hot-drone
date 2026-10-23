@@ -22,7 +22,7 @@ connectors:
     subtype: female
     pincount: 4
     pinlabels: [S,N,VCC (V),GND (G)]
-    notes: "Right Port on RC Reciever"
+    notes: "Right Port on RC Reciever NEED TO LABEL ENCLOSURE"
     image:
       src: RC_Receiver_Right.jpg
       height: 200

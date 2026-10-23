@@ -1,0 +1,46 @@
+# GNSS/Datalogger to Camera Module
+metadata:
+  title: GNSS Datalogger to Camera Module
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+  
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    bgcolor: '#F00000'
+    pincount: 4
+    pinlabels: [None,
+               PPS,
+               NMEA,
+               GND]
+    notes: "GNSS/DataLogger"
+  X2:
+    type: JST GH
+    subtype: female
+    pincount: 4
+    pinlabels: [PPS,
+                NMEA, 
+                None, 
+                GND]
+    #image: 
+    #   src: PHOTO.png
+    #   width: 200
+    notes: "Camera Module"
+
+cables:
+  W1:
+    type: wire
+    wirecount: 3
+    gauge: 28 AWG
+    length: 200 mm
+    colors: [OG,VT,BK]
+    wirelabels: []
+
+connections:
+  - - X1: [2-4]
+    - W1: [1-3]
+    - X2: [1,2,4]
+

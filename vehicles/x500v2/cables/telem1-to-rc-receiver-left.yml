@@ -1,3 +1,5 @@
+
+
 # TELEM1 to RC Receiver Left Cable for HOT X500 drone
 metadata:
   title: TELEM1 to RC Receiver Left
@@ -18,7 +20,7 @@ connectors:
     subtype: female
     pincount: 4
     pinlabels: [Tx (T),Rx (R),VCC (V),GND (G)]
-    notes: "Left Port on RC Reciever"
+    notes: "Left Port on RC Reciever NEED TO LABEL ENCLOSURE"
     image:
       src: RC_Receiver_Left.jpg
       height: 200
