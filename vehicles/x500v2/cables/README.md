@@ -31,9 +31,9 @@ SAFETY on Pixhawk to the Safety Switch
 This one is a bear! One of the GH pins needs to have two wires crimped into the same pin, which is challenging to get right. Again, strip 2 (or maybe 2.5) mm of wire and try to get both into the same pin with some insulation in the back tabs and wire in the front. Good luck! We struggled but ultimately succeeded with some practice.
 ![SAFETY to Safety Switch](PNG/safety-to-safety-switch.png)
 
-IO/PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
+FMU PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
 Be careful when plugging this one in; it's the only one that can be phyisically plugged in reversed. We Sharpied the end going into the PWM model green to make it as obvious as possible. 
-![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/io-pwm-out-to-pwm-module-b-cube-pwm-in.png)
+![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/fmu-pwm-out-to-pwm-module-b-cube-pwm-in.png)
 
 ### TELEM3 on Pixhawk to the Camera Subsystem
 This one is weird because the TELEM3 port needs to feed both the custom camera module on the bottom of the drone, and the LED board showing status to the users on the top. TODO: not fully designed yet, waiting on the final camera and LED board designs. 
