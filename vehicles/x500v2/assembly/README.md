@@ -59,6 +59,7 @@
 
 <img src="photos/flight_controller_vibration_dampers_on_top_plate.jpg" alt="vibration dampers on top plate" width=600>
 
+  - Stick the flight controller onto the plate with double-sided acrylic nano tape
   - Place the flight controller plate onto the dampers. The arrow on the flight controller should point in the same direction as the arrow on the plate (in case that wasn't obvious). Pull the dampers through the holes until they seat (it'll be a snug pull as the holes in the plate are about the same size as the holes in the washers). 
     - Maybe make sure the SD card is in there.
   - Place the cable (10-pin, green side into the PWM module)

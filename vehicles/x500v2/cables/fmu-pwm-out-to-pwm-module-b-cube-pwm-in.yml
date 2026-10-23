@@ -1,6 +1,6 @@
-#  PWM Motor Control for HOT X500 drone
+# FMU Motor Control for HOT X500 drone
 metadata:
-  title: IO/PWM OUT to PWM MODULE B-CUBE PWM IN
+  title: FMU PWM OUT to PWM MODULE B-CUBE PWM IN
   description: Custom cable harness
 
 options:
@@ -21,13 +21,12 @@ connectors:
                 IO_CH7,
                 IO_CH8,
                 GND]
-    notes: "IO/PWM OUT on Pixhawk"
+    notes: "FMU PWM OUT on Pixhawk"
   X2:
     type: JST GH
     subtype: female
-    bgcolor: '#00B000'
+    #bgcolor: '#00B000'
     pincount: 10
-    pins: [10,9,8,7,6,5,4,3,2,1]
     pinlabels: [VDD,
                 CH1,
                 CH2,
@@ -40,9 +39,6 @@ connectors:
                 GND]
     notes: |
       PWM MODULE B-CUBE PWM IN
-      Colored green; this is the
-      end that goes to the PWM
-      in, not the Pixhawk!
     image:
       src: PWM_MODULE_B-CUBE.jpg
       width: 225
@@ -58,6 +54,6 @@ cables:
 connections:
   - - X1: [1-5,10]
     - W1: [1-6]
-    - X2: [10,9,8,7,6,1]
+    - X2: [1-5,10]
 
 
