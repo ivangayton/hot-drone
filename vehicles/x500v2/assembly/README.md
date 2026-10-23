@@ -6,8 +6,9 @@
 
 ### Attach power distribution board to bottom plate
 <img src="photos/power_distribution_board_with_screws.jpg" alt="distribution board with a screw poking through it" width=600>
+
 - Mount screws on the power distribution board
-  - 4 x:
+  - 4x:
     - M3 X 18 socket head cap screw
     - M3 nut
     - M3 nylon washer
@@ -26,6 +27,7 @@
 
 
 <img src="photos/pwm_module_with_jumper_blockers.jpg" alt="Jumpers stuck in PWM module B-CUBE to block channels 5-8" width=400>
+
 - Screw the module onto the top of the top plate
   - 2x
     - M3 X 16 flange head socket screw
@@ -33,6 +35,7 @@
   - Drop the screws into the plate from the top
 
 <img src="photos/pwm_module_flange_head_screws.jpg" alt="PWM module screws" width=400>
+
   - Place the module on the bottom of the top plate,  with the front (the place where the connector from the Pixhawk goes, should be Sharpied green and opposite the side with the jumper/blockers. Tighten the Ny-locks on with a 5.5 mm nut driver (turn the screw head with a hex key).
 
 <img src="photos/pwm_module_mounted_with_hex_key_and_socket_driver.jpg" alt="PWM module mounted" width=600>
@@ -41,6 +44,7 @@
 <img src="photos/pwm_module_with_cable.jpg" alt="PWM module with cables" width=600>
 
 ### Mount the Flight Controller (PixHawk)
+
 - The flight controller mounts on vibration dampers
   - 4 x
     - Rubber black tubular vibration dampers (as opposed to the bulbous ones) 
@@ -59,9 +63,11 @@
     - Maybe make sure the SD card is in there.
   - Place the cable (10-pin, green side into the PWM module)
 ### Mount the safety switch button.
+
 - Make sure the connector on the bottom is facing toward the back of the aircraft, as that's where the cable will be coming from. Insert the cable into the safety switch; it's harder to do once it's mounted.
 <img src="photos/top_plate_with_flight_controller_and_safety_switch.jpg" alt="top plate with safety swith" width=600>
 ### Put the top plate on the bottom plate, with the motor arms between them.
+
 - Assemble each motor arm base
 - Per arm:
   - 4x
