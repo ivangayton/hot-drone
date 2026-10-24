@@ -17,6 +17,7 @@ The cable supplying power from the drone battery/power system to the flight cont
 ![](PNG/power1-to-power-module.png)
 
 ### Flight Controller to RC cables (2)
+### TODO: add photo showing the correct plug sides with the receiver housing on 
 These are probably hard to find for sale unless it's part of a kit that includes the flight controller, RC receiver, and the cables between. Since we're using a flight controller and RC reciever that we purchased separately, and are using a setup with two separate communication channels (RC and Telemetry), we fabricated them.
 
 The GH pins are quite fiddly to crimp (we succeeded by stripping exactly 2 mm from the end of each wire and crimping them with a general-purpose crimper, but it was tough (we literally did the stripping under a bench microscope). The SH pins are even worse. If you can find 15 cm GH to SH pre-crimped wires, definitely buy them and just poke them into the connectors (that's pretty easy)
@@ -31,8 +32,7 @@ SAFETY on Pixhawk to the Safety Switch
 This one is a bear! One of the GH pins needs to have two wires crimped into the same pin, which is challenging to get right. Again, strip 2 (or maybe 2.5) mm of wire and try to get both into the same pin with some insulation in the back tabs and wire in the front. Good luck! We struggled but ultimately succeeded with some practice.
 ![SAFETY to Safety Switch](PNG/safety-to-safety-switch.png)
 
-FMU PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
-Be careful when plugging this one in; it's the only one that can be phyisically plugged in reversed. We Sharpied the end going into the PWM model green to make it as obvious as possible. 
+FMU PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN 
 ![IO/PWM OUT to PWM MODULE B-CUBE PWM IN](PNG/fmu-pwm-out-to-pwm-module-b-cube-pwm-in.png)
 
 ### TELEM3 on Pixhawk to the Camera Subsystem

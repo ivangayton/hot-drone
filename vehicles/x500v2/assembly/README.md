@@ -76,10 +76,19 @@
     - M3 flange Ny-lock nuts
 - Match the motor number (on sticker, M1, M2, M3, M4) to the corresponding motor number on the top plate.
 - Plug the control wire block into the PWM module now; it'll be much harder after the motor arms are in place!
-- Assemble the two spar mount base pieces, with the collar facing out. Ensure the little round pins on the inside of them poke into the holes in the carbon fiber arrms, and that the rectangular tabs fit into the corresponding holes in the top and bottom plates. Push the M3 screw through the top plate, down through the spar mount base pieces, through the bottom plate, and add a Ny-Lock nut. Just add one screw per arm until you've got them all on, then add the remaining three per arm. Try to tighten them evenly; first snug them until the gaps are relatively even, then tighten them, ideally with a torque driver to about 7 pound-inches (or the equivalent non-insane metric unit). These do not need to be over-tightened as the spars are held in place by the pins in the holes in the spars, and the mounts are held in place by the rectangular tabs in the holes in the plates. 
-- While you're at it, before you tighten everything up, check that the motors opposite one another will rotate in the same direction (3 wires parallel vs 2 of them crossed over)
+- Assemble the two spar mount base pieces, with the collar facing out. Ensure the little round pins on the inside of them poke into the holes in the carbon fiber arrms, and that the rectangular tabs fit into the corresponding holes in the top and bottom plates. Push the M3 screw through the top plate, down through the spar mount base pieces, through the bottom plate, and add a Ny-Lock nut. Add one screw per arm until you've got them all on, then add the remaining three per arm. Try to tighten them evenly; first snug them until the gaps are relatively even, then tighten them, ideally with a torque driver to about 7 pound-inches (or the equivalent non-insane metric unit). These do not need to be over-tightened as the spars are held in place by the pins in the holes in the spars, and the mounts are held in place by the rectangular tabs in the holes in the plates. 
+- While you're at it, before you tighten everything up, check that the motors opposite one another will rotate in the same direction (3 wires parallel vs 2 of them crossed over).
+  - When testing the motors using the Motor tab in the Settings view of QGroundControl, keep the following in mind. QGroundControl uses letters for the motors, with ABCD starting at front right and going clockwise around the motors, while Ardupilot and the x500 use the number 1,2,3,4 in an X pattern starting from the front right. 
 
-- Make sure the arrow on the top plate is pointing in the same direction as the sticker arrow on the bottom plate! 
+| Position    | Motor # | QGC letter | Direction |
+|-------------|-------------|------------------|-----------|
+| Front Right | M1          | A                | CCW       |
+| Rear Left   | M2          | C                | CCW       |
+| Front Left  | M3          | D                | CW        |
+| Rear Right  | M4          | B                | CW        |
+
+- Before tightening the  sure the arrow on the top plate is pointing in the same direction as the sticker arrow on the bottom plate! 
+
 
 TODAY
 ### Telemetry radio
@@ -87,7 +96,9 @@ TODAY
 ### Mount GNSS (kept on by antenna, to review)
 - fab cables
   - TELEM3 to camera (DONE)
-  - GNSS/Datalogger to camera (200 mm)
+  - GNSS/Datalogger to camera
+
+
   - GNSS to IMU
   - Power to camera
   - GNSS to flight controller
