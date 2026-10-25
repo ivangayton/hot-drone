@@ -1,0 +1,52 @@
+
+
+# I2C to Benewake TF-Luna LIDAR Rangefinder
+metadata:
+  title: I2C to Benewake TF-Luna LIDAR Rangefinder
+  description: Custom cable harness
+
+options:
+  bgcolor_node: "#FFFFFF"
+
+connectors:
+  X1: 
+    type: JST GH
+    subtype: female
+    pincount: 4
+    pinlabels: [VCC_5V,
+                I2C2_SCL,
+                I2C2_SDA,
+                GND]
+    notes: "I2C on Pixhawk"
+  X2:
+    type: JST SH1.25
+    subtype: female
+    pincount: 6
+    pinlabels: [VCC_5V,
+                RXD/SDA,
+                TXD/SCL,
+                GND,
+                Config (ground in I2C),
+                None]
+    notes: "Port on TF-Luna Lidar"
+    #image:
+    #  src: RC_Receiver_Left.jpg
+    #  height: 200
+      
+cables:
+  W1:
+    type: wire
+    wirecount: 5
+    gauge: 28 AWG
+    length: 200 mm
+    colors: [BK,WH,GN,RD,YE]
+    notes: |-
+      Colors are not optimal, based on a cable that came with the unit. See 
+      https://discuss.px4.io/t/application-of-tf-luna-iic-in-pixhawk-cube-ardupilot-firmware/48856
+      for a more sensible color scheme for future cables. 
+ 
+connections:
+  - - X1: [1,3,2,4,4]
+    - W1: [1-5]
+    - X2: [1-5]
+

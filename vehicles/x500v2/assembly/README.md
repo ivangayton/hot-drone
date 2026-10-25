@@ -87,24 +87,18 @@
 | Front Left  | M3          | D                | CW        |
 | Rear Right  | M4          | B                | CW        |
 
-- Before tightening the  sure the arrow on the top plate is pointing in the same direction as the sticker arrow on the bottom plate! 
+- Before tightening the  sure the arrow on the top plate is pointing in the same direction as the sticker arrow on the bottom plate!
+
+## Motors
+We're using a combination of motors and tri-blad props that don't self-tighten; the prop mounts take a regular-threaded M5 nut (meaning two of the four will tend to loosen with the torque of the motors). Use Ny-locks, and make sure you have a handful (say 8) spare M5 Ny-locks with the kit for when they get tired from mounting and unmounting. 
 
 
 TODAY
 ### Telemetry radio
 
-### Mount GNSS (kept on by antenna, to review)
+### Mount GNSS (kept on by antenna with nut)
 - fab cables
-  - TELEM3 to camera (DONE)
-  - GNSS/Datalogger to camera
-
-
-  - GNSS to IMU
-  - Power to camera
-  - GNSS to flight controller
-  
- LOOK OVER ENTIRE BUILD BEFORE FLIGHT
-  
+  - Rangefinder (Benewake TF-Luna  
 
 ### Power supplies (rework for capacitor) (resolder connectors and wires)
 
