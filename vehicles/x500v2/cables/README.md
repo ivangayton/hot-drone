@@ -40,7 +40,7 @@ This one is weird because the TELEM3 port needs to feed both the custom camera m
 ![TELEM3 to Camera](PNG/telem3-to-camera.png)
 
 ### GNSS Datalogger to Camera Module
-![GNSS Datalogger to Camera Module](/PNG/gnss-datalogger-to-camera-module.png)
+![GNSS Datalogger to Camera Module](PNG/gnss-datalogger-to-camera-module.png)
 
 ### GPS1 on Pixhawk to GNSS Datalogger
 TODO: document this cable
