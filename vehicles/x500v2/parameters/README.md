@@ -18,6 +18,10 @@ NOTE: the serial ports on the Pixhawk6C Pro we have don't match the Holybro docu
 
 NOTE: in PX4 the mapping is different, as are the parameter names. If and when we want to get any of this stuff working with PX4, we'll need to investigate the serial mapping among many other things.
 
+### Battery sensing
+
+If you're using the POWER1 port on the Pixhawk for the power module, the BATT_VOLT_PIN parameter should be 8 and the BATT_CURR_PIN should be 4. If using POWER2, BATT_VOLT_PIN should be 5 and BATT_CURR_PIN should be 14. 
+
 ### 2026-10-16 Further Ken and Ivan setup
 The KB2040 coordinator for the camera module is flashed&mdash;for the moment&mdash;with a [mock setup implementing a "fake" camera component](https://github.com/mrkensan/tri-cam-kb2040/) to exercise the interaction between the flight controller, ground station, and camera subsystem (that interaction won't change when we add the RPis with the actual cameras, we'll just add the actual photo captures etc). This interaction happens in MavLink, so the flight controller parameters need to be set correctly. If they aren't, the camera controls do not appear in the QGroundControl UI, and (rather more importantly) the flight controller won't be able to instruct the camera to start capturing photos.
 
