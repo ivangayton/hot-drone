@@ -10,21 +10,21 @@ connectors:
   X1: 
     type: JST GH
     subtype: female
-    bgcolor: '#F00000'
+    #bgcolor: '#F00000'
     pincount: 4
-    pinlabels: [None,
+    pinlabels: [GND,
                PPS,
                NMEA,
-               GND]
+               None]
     notes: "GNSS/DataLogger"
   X2:
     type: JST GH
     subtype: female
     pincount: 4
-    pinlabels: [PPS,
-                NMEA, 
-                None, 
-                GND]
+    pinlabels: [GND,
+               PPS,
+               NMEA,
+               None]
     #image: 
     #   src: PHOTO.png
     #   width: 200
@@ -36,11 +36,11 @@ cables:
     wirecount: 3
     gauge: 28 AWG
     length: 200 mm
-    colors: [OG,VT,BK]
+    colors: [BK,OG,VT]
     wirelabels: []
 
 connections:
-  - - X1: [2-4]
+  - - X1: [1-3]
     - W1: [1-3]
-    - X2: [1,2,4]
+    - X2: [1-3]
 
