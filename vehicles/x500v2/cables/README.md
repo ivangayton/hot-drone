@@ -38,3 +38,12 @@ FMU PWM OUT on Pixhawk to PWM MODULE B-CUBE PWM IN
 ### TELEM3 on Pixhawk to the Camera Subsystem
 This one is weird because the TELEM3 port needs to feed both the custom camera module on the bottom of the drone, and the LED board showing status to the users on the top. TODO: not fully designed yet, waiting on the final camera and LED board designs. 
 ![TELEM3 to Camera](PNG/telem3-to-camera.png)
+
+### GNSS Datalogger to Camera Module
+![GNSS Datalogger to Camera Module](/PNG/gnss-datalogger-to-camera-module.png)
+
+### GPS1 on Pixhawk to GNSS Datalogger
+TODO: document this cable
+
+### I2C to Benewake TF-Luna LiDAR Rangefinder
+![I2C to Benewake TF-Luna LiDAR Fangefinder](PNG/i2c-to-benewake-tf-luna-lidar-rangefinder.png)
